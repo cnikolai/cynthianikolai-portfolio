@@ -43,3 +43,7 @@ button {
     width: 100px;
     border-radius: 15px;
 }
+
+img[alt="Picture of Section of World's Largest Puzzle"] {
+    height: 600px;
+}
