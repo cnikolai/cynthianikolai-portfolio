@@ -7,3 +7,34 @@ div > img {
     width: 50px;
     height: 50px;
 }
+
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+}
+
+.work img {
+    width: 250px;
+    opacity: 0.8;
+}
+
+.work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 250px;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #80a4dd;
+    border-bottom: 0;
+}
+
+.sized {
+    height: 200px;
+    width: 100px;
+    border-radius: 15px;
+}
