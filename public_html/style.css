@@ -48,6 +48,15 @@ img[alt="Picture of Section of World's Largest Puzzle"] {
     height: 600px;
 }
 
-#profile, #skills, #fun-fact {
+#profile, #skills, #fun-fact, button{
     background-color: #fc8c2e;
+}
+
+/*button {*/
+/*    background-color: #5f9a2b;*/
+/*}*/
+
+.title {
+    /*color: #5f9a2b;*/
+    font-weight: bolder;
 }
