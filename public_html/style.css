@@ -1,6 +1,12 @@
 img[src="headshot.jpeg"] {
-    width: 250px;
-    height: 250px;
+    /*width: 250px;*/
+    /*height: 250px;*/
+    width: 75vw;
+    height: 75vw;
+    max-height: 25vw;
+    max-width: 25vw; /*50% of user's viewport width*/
+    min-height: 150px;
+    min-width: 150px; /*50% of user's viewport width*/
 }
 
 img {
