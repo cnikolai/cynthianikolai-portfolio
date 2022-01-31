@@ -18,6 +18,11 @@ button {
     width: 274px;
 }
 
+.work.col-6 img {
+    width: 150px;
+    opacity: 0.8;
+}
+
 .work img {
     width: 250px;
     opacity: 0.8;
