@@ -9,53 +9,69 @@ img[src="headshot.jpeg"] {
     min-width: 150px; /*50% of user's viewport width*/
 }
 
-img {
+.icon {
     width: 50px;
     height: 50px;
+}
+
+img {
+    height: 200px;
+    width: 240px
 }
 
 button {
     width: 125px;
 }
 
-.work {
-    /*position: relative;*/
-    /*float: left;*/
-    width: 274px;
+/*.work {*/
+/*    !*position: relative;*!*/
+/*    !*float: left;*!*/
+/*    width: 274px;*/
+/*}*/
+
+/*.work img {*/
+/*    width: 240px;*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/*.work h3 {*/
+/*    !*position: absolute;*!*/
+/*    position: relative;*/
+/*    margin: auto;*/
+/*    bottom: 20px;*/
+/*    width: 240px;*/
+/*    padding: 15px;*/
+/*    margin-bottom: 0;*/
+/*    font-weight: 300;*/
+/*    line-height: 30px;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*    background: #80a4dd;*/
+/*    border-bottom: 0;*/
+/*    border-radius: 0 0 15px 15px;*/
+/*    font-size: 14pt;*/
+/*}*/
+
+/*.sized {*/
+/*    height: 210px;*/
+/*    width: 100px;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+/*video {*/
+/*    border-radius: 15px;*/
+/*    padding: 0px;*/
+/*}*/
+
+.card {
+    border-radius: 15px;
+    width: 18rem;
 }
 
-.work img {
-    width: 240px;
-    opacity: 0.8;
-}
-
-.work h3 {
-    /*position: absolute;*/
-    position: relative;
-    margin: auto;
-    bottom: 20px;
-    width: 240px;
-    padding: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-    color: #ffffff;
-    text-align: center;
-    background: #80a4dd;
-    border-bottom: 0;
+.card-body {
     border-radius: 0 0 15px 15px;
-    font-size: 14pt;
-}
-
-.sized {
-    height: 210px;
-    width: 100px;
-    border-radius: 15px;
-}
-
-video {
-    border-radius: 15px;
-    padding: 0px;
+    color: #ffffff;
+    background: #80a4dd;
 }
 
 img[alt="Picture of Section of World's Largest Puzzle"] {
