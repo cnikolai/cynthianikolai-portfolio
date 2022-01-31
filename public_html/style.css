@@ -51,7 +51,13 @@ button {
 }
 
 img[alt="Picture of Section of World's Largest Puzzle"] {
-    height: 600px;
+    /*height: 600px;*/
+    width: 100vw;
+    height: 100vw;
+    max-height: 50vw;
+    max-width: 100vw; /*50% of user's viewport width*/
+    min-height: 200px;
+    min-width: 200px; /*50% of user's viewport width*/
 }
 
 #profile, #skills, #fun-fact, button{
