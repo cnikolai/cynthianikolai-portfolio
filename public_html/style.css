@@ -19,20 +19,22 @@ button {
 }
 
 .work {
-    position: relative;
-    float: left;
+    /*position: relative;*/
+    /*float: left;*/
     width: 274px;
 }
 
 .work img {
-    width: 250px;
+    width: 240px;
     opacity: 0.8;
 }
 
 .work h3 {
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
+    margin: auto;
     bottom: 20px;
-    width: 250px;
+    width: 240px;
     padding: 15px;
     margin-bottom: 0;
     font-weight: 300;
@@ -42,12 +44,18 @@ button {
     background: #80a4dd;
     border-bottom: 0;
     border-radius: 0 0 15px 15px;
+    font-size: 14pt;
 }
 
 .sized {
-    height: 200px;
+    height: 210px;
     width: 100px;
     border-radius: 15px;
+}
+
+video {
+    border-radius: 15px;
+    padding: 0px;
 }
 
 img[alt="Picture of Section of World's Largest Puzzle"] {
