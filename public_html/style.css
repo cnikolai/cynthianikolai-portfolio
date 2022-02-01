@@ -96,3 +96,7 @@ img[alt="Picture of Section of World's Largest Puzzle"] {
     /*color: #5f9a2b;*/
     font-weight: bolder;
 }
+
+.note {
+    line-height: 80%;
+}
