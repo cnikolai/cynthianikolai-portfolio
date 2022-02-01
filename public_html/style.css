@@ -63,6 +63,27 @@ button {
 /*    padding: 0px;*/
 /*}*/
 
+.resume {
+    display: inline-block;
+    position: relative;
+}
+
+img[src="pdficon.png"]+h3 {
+    position: absolute;
+    margin: auto;
+    bottom: 6px;
+    width: 50px;
+    padding: 0px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 11px;
+    color: #ffffff;
+    text-align: center;
+    background: forestgreen;
+    border-bottom: 0;
+    font-size: 9pt;
+}
+
 .card {
     border-radius: 15px;
     width: 18rem;
