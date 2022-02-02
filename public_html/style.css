@@ -21,7 +21,8 @@ img {
 
 .screenshot {
     margin: auto;
-    width: 135px
+    width: 135px;
+    border: 1px solid lightgray;
 }
 
 
