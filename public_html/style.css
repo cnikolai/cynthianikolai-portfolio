@@ -19,6 +19,12 @@ img {
     width: 240px
 }
 
+.screenshot {
+    margin: auto;
+    width: 135px
+}
+
+
 button {
     width: 125px;
 }
