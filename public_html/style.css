@@ -112,8 +112,18 @@ img[alt="Picture of Section of World's Largest Puzzle"] {
     min-width: 200px; /*50% of user's viewport width*/
 }
 
-#profile, #skills, #fun-fact, button{
+#profile, #skills, #fun-fact, button {
     background-color: #fc8c2e;
+}
+
+input, textarea{
+    background-color: gainsboro;
+}
+
+#submit {
+    border-radius: 15px;
+    border: none;
+    width: 9rem;
 }
 
 /*button {*/
