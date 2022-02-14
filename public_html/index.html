@@ -124,22 +124,22 @@
         </div>
         <div class="row ms-5">
             <div class="m-3 col-6 col-md-4 col-lg-2 mx-auto">
-                <button class="rounded-pill border-0 p-3 shadow" onclick="onFrontEndClicked()">Front End</button>
+                <button class="rounded-pill border-1 p-3 shadow" onclick="onFrontEndClicked()">Front End</button>
             </div>
             <div class="m-3 col-6 col-md-4 col-lg-2 mx-auto">
-                <button class="rounded-pill border-0 p-3 shadow" onclick="onFullStackClicked()">Full Stack</button>
+                <button class="rounded-pill border-1 p-3 shadow" onclick="onFullStackClicked()">Full Stack</button>
             </div>
             <div class="m-3 col-6 col-md-4 col-lg-2 mx-auto">
-                <button class="rounded-pill border-0 p-3 shadow" onclick="onAndroidClicked()">Android</button>
+                <button class="rounded-pill border-1 p-3 shadow" onclick="onAndroidClicked()">Android</button>
             </div>
             <div class="m-3 col-6 col-md-4 col-lg-2 mx-auto">
-                <button class="rounded-pill border-0 p-3 shadow" onclick="oniOSClicked()">iOS</button>
+                <button class="rounded-pill border-1 p-3 shadow" onclick="oniOSClicked()">iOS</button>
             </div>
             <div class="m-3 col-6 col-md-4 col-lg-2 mx-auto">
-                <button class="rounded-pill border-0 p-3 shadow" onclick="onHighlightsClicked()">Highlights</button>
+                <button class="rounded-pill border-1 p-3 shadow" onclick="onHighlightsClicked()">Highlights</button>
             </div>
             <div class="m-3 col-6 col-md-4 col-lg-2 mx-auto">
-                <button class="rounded-pill border-0 p-3 shadow" onclick="onAnimationClicked()">Animations</button>
+                <button class="rounded-pill border-1 p-3 shadow" onclick="onAnimationClicked()">Animations</button>
             </div>
         </div>
     </div>
@@ -561,25 +561,35 @@
                 <h5 class="title">~~ Contact Me ~~</h5>
             </div>
             <div class="col-12 ms-5">
-                <form>
+                <form action="./apis/" id="contact" method="POST" novalidate>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Enter email address (so I can reply to
-                            you :-)):</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <label for="name" class="form-label">Enter name (so I can reply to you :-)):</label>
+                        <input class="form-control" id="name" name="name"
+                               placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Enter email address (so I can reply to you :-)):</label>
+                        <input type="email" class="form-control" id="email" name="email"
                                placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Enter your message:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="subject" class="form-label">Subject:</label>
+                        <input class="form-control" id="subject" name="subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Enter your message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="3"></textarea>
                     </div>
                     <div>
-                        <button class="rounded-pill border-0 p-2 shadow" id="submit" type="submit" value="Submit">Submit</button>
+                        <button class="rounded-pill border-1 p-2" id="submit" type="submit" value="Submit">Submit</button>
                     </div>
                 </form>
+                <div id="output-area"></div>
             </div>
         </div>
     </div>
 </section>
+
 
 <footer class="container-fluid bg-dark text-light ps-3 py-3">
     <div class="row me-5">
@@ -601,10 +611,15 @@
 </footer>
 
 
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js" integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

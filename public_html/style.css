@@ -120,11 +120,11 @@ input, textarea{
     background-color: gainsboro;
 }
 
-#submit {
-    border-radius: 15px;
-    border: none;
-    width: 9rem;
-}
+/*#submit {*/
+/*    border-radius: 15px;*/
+/*    border: none;*/
+/*    width: 9rem;*/
+/*}*/
 
 /*button {*/
 /*    background-color: #5f9a2b;*/

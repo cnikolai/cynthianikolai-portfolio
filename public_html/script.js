@@ -1,3 +1,66 @@
+// JQuery
+// check form and validate that form has correct types of data and hanlde submission
+$(document).ready(function(){
+    $('#contact').validate({
+        debug: true,
+        //put class in div tag
+        errorClass: 'alert alert-danger',
+        //id of div tag where output should go
+        ErrorLabelContainer: '#output-area',
+        //div of information
+        errorElement: 'div',
+        // rules here define what is good or bad input
+        // each rule starts with the form input element's NAME attribute
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                email: true,
+                required: true
+            },
+            message: {
+                required: true,
+                maxlength: 2000
+            },
+            subject: {
+                required: false,
+                maxlength: 255
+            }
+        },
+        messages: {
+            name: {
+                required: 'Please enter your name, so that I can reply to you :-)'
+            },
+            email: {
+                email: 'Please provide a valid email, so that I can reply to you :-)',
+                required: 'Email is required. Please provide an email, so that I can reply to you :-)'
+            },
+            message: {
+                required: 'Please provide a message',
+                maxlength: 'The maximum length of the message is 2000 characters!'
+            },
+            subject: {
+                maxlength: 'The maximum length of the subject is 255 characters!'
+            }
+        },
+        submitHandler: (form) => {
+            $('#contact').ajaxSubmit({
+                type: 'POST',
+                url: $('#contact').attr('action'),
+                success: (ajaxOutput) => {
+                    $('#output-area').css('display','')
+                    $('#output-area').html(ajaxOutput)
+
+                    if ($('.alert-success') >= 1) {
+                        $('#contact')[0].reset()
+                    }
+                }
+            })
+        }
+    })
+})
+
 let frontEnd = document.getElementById('front-end')
 let fullStack = document.getElementById('full-stack')
 let android = document.getElementById('android')
@@ -64,3 +127,4 @@ function onAnimationClicked() {
     highlights.style.display = "none"
     animations.style.display = "block"
 }
+
